@@ -42,25 +42,21 @@ traits:
             schema: Acl2
             example: |
               {
-                "aclist": [
+                "aclist2": [
                   {
                     "aceid": 1,
                     "subject": {
                       "authority": "484b8a51-cb23-46c0-a5f1-b4aebef50ebe",
-                      "roles": [
-                        "SOME_STRING", "SOME_STRING"
-                      ]
+                      "role": "SOME_STRING"
                     },
                     "resources": [
                       {
-                        "href": "coaps://IP-ADDR/light",
-                        "rel": "some-rel",
+                        "href": "/light",
                         "rt": ["oic.r.light"],
                         "if": ["oic.if.a"]
                       },
                       {
-                        "href": "coaps://IP-ADDR/door",
-                        "rel": "some-rel",
+                        "href": "/door",
                         "rt": ["oic.r.door"],
                         "if": ["oic.if.a"]
                       }
@@ -74,14 +70,12 @@ traits:
                     },
                     "resources": [
                       {
-                        "href": "coaps://IP-ADDR/light",
-                        "rel": "some-rel",
+                        "href": "/light",
                         "rt": ["oic.r.light"],
                         "if": ["oic.if.a"]
                       },
                       {
-                        "href": "coaps://IP-ADDR/door",
-                        "rel": "some-rel",
+                        "href": "/door",
                         "rt": ["oic.r.door"],
                         "if": ["oic.if.a"]
                       }
@@ -89,17 +83,16 @@ traits:
                     "permission": 24
                     },
                     {
+                      "aceid": 3,
                       "subject": {"conntype": "anon-clear"},
                       "resources": [
                         {
-                          "href": "coaps://IP-ADDR/light",
-                          "rel": "some-rel",
+                          "href": "/light",
                           "rt": ["oic.r.light"],
                           "if": ["oic.if.a"]
                         },
                         {
-                          "href": "coaps://IP-ADDR/door",
-                          "rel": "some-rel",
+                          "href": "/door",
                           "rt": ["oic.r.door"],
                           "if": ["oic.if.a"]
                         }
@@ -140,25 +133,21 @@ traits:
         schema: Acl2
         example: |
           {
-            "aclist": [
+            "aclist2": [
               {
                 "aceid": 1,
                 "subject": {
                   "authority": "484b8a51-cb23-46c0-a5f1-b4aebef50ebe",
-                  "roles": [
-                    "SOME_STRING", "SOME_STRING"
-                  ]
+                  "role": "SOME_STRING"
                 },
                 "resources": [
                   {
-                    "href": "coaps://IP-ADDR/light",
-                    "rel": "some-rel",
+                    "href": "/light",
                     "rt": ["oic.r.light"],
                     "if": ["oic.if.a"]
                   },
                   {
-                    "href": "coaps://IP-ADDR/door",
-                    "rel": "some-rel",
+                    "href": "/door",
                     "rt": ["oic.r.door"],
                     "if": ["oic.if.a"]
                   }
@@ -172,14 +161,12 @@ traits:
                 },
                 "resources": [
                   {
-                    "href": "coaps://IP-ADDR/light",
-                    "rel": "some-rel",
+                    "href": "/light",
                     "rt": ["oic.r.light"],
                     "if": ["oic.if.a"]
                   },
                   {
-                    "href": "coaps://IP-ADDR/door",
-                    "rel": "some-rel",
+                    "href": "/door",
                     "rt": ["oic.r.door"],
                     "if": ["oic.if.a"]
                   }
